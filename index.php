@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION["loginusername"])){
+    header("Location:notes.php?mytoast=true");
+}
+if(!isset($_SESSION["loginusername"])&&isset($_COOKIE["loginusername"])){
+    $_SESSION["loginusername"]=$_COOKIE["loginusername"];
+    header("Location:notes.php?mytoast=true");
+}
+if(!isset($_SESSION["loginusername"])&&!isset($_COOKIE["loginusername"])){
+    header("Location:login.php");
+}
+?>

@@ -1,0 +1,234 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Mooli";
+}
+.mynavbar{
+    background-color: #ffc94a;
+}
+.title{
+    font-weight: bold;
+}
+.bi-menu-button-wide{
+    font-size: 30px;
+}
+.menubtn{
+    border: 0;
+}
+.menubtn:active{
+    border: 0;
+}
+.list-group{
+    border: none;
+    border-radius: 10px;
+}
+.list-group-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: background-color 0.1s;
+}
+.list-group-item:hover {
+    background-color: #000000;
+    color: #ffc94a !important;
+}
+.list-group-item.active {
+    background-color: #ffc94a;
+    color: black !important;
+}
+.plusbtn{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffc94a;
+    transition: transform 0.3s linear;
+    z-index: 1000;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.plusbtn:hover{
+    background-color: #ffc94a;
+    transform: scale(1.2);
+}
+.plusbtn:active{
+    background-color: #ffc94a;
+}
+.mytoast,.notestoast,.nonotestoast,.nochecklisttoast,.tasktoast,.remaindertoast,.noremaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+    position: fixed;
+    z-index: 1000;
+    background-color: #ffc94a;
+    color: black;
+}
+.checklisttoast{
+    position: fixed;
+    z-index: 1000;
+    background-color: #ffc94a;
+    color: black;
+    font-size: 15px;
+}
+.nonotestoast,.nochecklisttoast,.noremaindertoast{
+    text-align: justify !important;
+    width: 300px;
+    top: 100px;
+    left: calc(50% - 150px);
+}
+.mysubmitbtn:hover{
+    background-color: #ffc94a !important;
+}
+.myclearbtn{
+    background-color: black;
+    color: #ffc94a;
+}
+.myclearbtn:hover{
+    background-color: #202020;
+    color: #ffc94a;
+}
+.mycardlabel{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mycardtime{
+    background-color: #333333;
+    color: #ffc94a;
+    width: 65%;
+    font-size: 13px;
+    height: 50px;
+}
+.mycardtitle{ 
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-header{
+    background-color: #ffc94a;
+}
+.card-header:hover{
+    overflow-x: auto !important;
+}
+.card-body,.card-footer{
+    background-color: #ffd77b;
+}
+.time{
+    font-size: 12px;
+    font-weight: bold;
+}
+.card-body{
+    overflow-y: hidden;
+}
+.card-body:hover{
+    overflow-y: auto;
+}
+.card,.cardcol{
+    height: 100% !important;
+}
+.form-check-input{
+    border-radius: 100% !important;
+}
+.editbox{
+    border: 2px solid black;
+}
+@media(min-width: 1200px){
+    .title{
+        font-size: 30px;
+    }
+    .plusbtn{
+        bottom: 50px;
+        right: 50px;
+    }
+    .mytoast,.notestoast,.checklisttoast,.tasktoast,.remaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+        width: 300px;
+        bottom: 50px;
+        left: calc(50% - 150px);
+    }
+    .cardrow{
+        height: 400px !important;
+    }
+    .offcanvas{
+        width: 30% !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .title{
+        font-size: 27px;
+    }
+    .plusbtn{
+        bottom: 50px;
+        right: 50px;
+    }
+    .mytoast,.notestoast,.checklisttoast,.tasktoast,.remaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+        width: 300px;
+        bottom: 50px;
+        left: calc(50% - 150px);
+    }
+    .cardrow{
+        height: 350px !important;
+    }
+    .offcanvas{
+        width: 35% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .title{
+        font-size: 25px;
+    }
+    .plusbtn{
+        bottom: 40px;
+        right: 40px;
+    }
+    .mytoast,.notestoast,.checklisttoast,.tasktoast,.remaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+        width: 300px;
+        bottom: 40px;
+        left: calc(50% - 150px);
+    }
+    .cardrow{
+        height: 450px !important;
+    }
+    .offcanvas{
+        width: 40% !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .title{
+        font-size: 21px;
+    }
+    .plusbtn{
+        bottom: 30px;
+        right: 30px;
+    }
+    .mytoast,.notestoast,.checklisttoast,.tasktoast,.remaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+        width: 300px;
+        bottom: 30px;
+        left: calc(50% - 150px);
+    }
+    .cardrow{
+        height: 300px !important;
+    }
+    .offcanvas{
+        width: 60% !important;
+    }
+}
+@media (max-width: 575.98px){
+    .title{
+        font-size: 14px;
+    }
+    .plusbtn{
+        bottom: 20px;
+        right: 20px;
+    }
+    .mytoast,.notestoast,.checklisttoast,.tasktoast,.remaindertoast,.deletenotetoast,.deleteremaindertoast,.deletechecklisttoast,.notesupdatetoast,.remainderupdatetoast{
+        width: 300px;
+        bottom: 70px;
+        left: calc(50% - 150px);
+    }
+    .cardrow{
+        height: 400px !important;
+    }
+    .offcanvas{
+        width: 80% !important;
+    }
+    .time{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}

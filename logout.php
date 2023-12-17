@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION["loginusername"])){
+    unset($_SESSION["loginusername"]);
+    session_destroy();
+    setcookie("loginusername","",time()-360000,"/");
+}
+header("Location:index.php");
+?>

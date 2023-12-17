@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Mooli";
+    background-image: url("utilities/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#loginform,#signinform{
+    background-color: white;
+    border-radius: 20px;
+}
+#logintitle,#signintitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+#loginbtn:hover,#signinbtn:hover{
+    background-color: #ffc94a !important;
+}
+.input-group-relative{
+    position: relative;
+}
+.input-group-text{
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+    height: 100%;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 100;
+}
+#loginpassword,#signinpassword,#resigninpassword{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.mytoast{
+    background-color: white;
+    border-radius: 10px;
+}
